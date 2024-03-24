@@ -27,11 +27,8 @@ const nextConfig = withStoreConfig({
       },
       {
         protocol: "https",
-        hostname: "medusaleaf.s3.us-east-1.amazonaws.com",
+        hostname:"medusaleaf.s3.us-east-1.amazonaws.com",
       },
-      {
-        domains: ['medusa-back-railway.vercel.app'],
-      }
     ],
   },
 })
