@@ -1,22 +1,10 @@
 import { Github } from "@medusajs/icons"
 import { Button, Heading } from "@medusajs/ui"
-import Image from "next/image"
-
-const MyImage = () => {
-  return (
-    <Image
-      src="/twitter-image.jpg"
-      alt="Hero image"
-      layout="fill"
-      objectFit="cover"
-    />
-  )
-}
 
 const Hero = () => {
   return (
     <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle"
-    style={{ backgroundImage: "/hero.jpg", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+         style={{ backgroundImage: "url('/back1.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
         <span>
           <Heading
@@ -35,6 +23,7 @@ const Hero = () => {
         <a
           href="https://github.com/medusajs/nextjs-starter-medusa"
           target="_blank"
+          rel="noopener noreferrer" // It's good practice to add this for security reasons when links open in a new tab
         >
           <Button variant="secondary">
             View on GitHub
