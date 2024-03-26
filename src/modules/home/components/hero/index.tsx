@@ -1,17 +1,16 @@
-import { Github } from "@medusajs/icons"
-import { Button, Heading } from "@medusajs/ui"
+import { Github } from "@medusajs/icons";
+import { Button, Heading } from "@medusajs/ui";
 
 const Hero = () => {
   return (
-    <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle"
-         style={{ backgroundImage: '/back1.jpg', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-transparent">
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
         <span>
           <Heading
             level="h1"
             className="text-3xl leading-10 text-ui-fg-base font-normal"
           >
-            Hemp - commerce Starter Template
+            Hemp - commerce
           </Heading>
           <Heading
             level="h2"
@@ -23,16 +22,16 @@ const Hero = () => {
         <a
           href="https://github.com/medusajs/nextjs-starter-medusa"
           target="_blank"
-          rel="noopener noreferrer" // It's good practice to add this for security reasons when links open in a new tab
+          rel="noopener noreferrer"
         >
-          <Button variant="secondary">
+          <Button variant="secondary" className="bg-transparent">
             View on GitHub
             <Github />
           </Button>
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
